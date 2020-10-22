@@ -11,9 +11,30 @@
 	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 	<link rel="icon" type="image/png" href="favicon.png">
 
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+		
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyA9gI6ikXCXrpuLzlyxPZO8Ir3B9cDM03Q",
+		authDomain: "cloud-fusion-local.firebaseapp.com",
+		databaseURL: "https://cloud-fusion-local.firebaseio.com",
+		projectId: "cloud-fusion-local",
+		storageBucket: "cloud-fusion-local.appspot.com",
+		messagingSenderId: "631037630361",
+		appId: "1:631037630361:web:84c3f482a58d4f0d68a508"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
 	<!-- Sapper creates a <script> tag containing `src/client.js`
-	     and anything else it needs to hydrate the app and
-	     initialise the router -->
+	 and anything else it needs to hydrate the app and
+	 initialise the router -->
 	%sapper.scripts%
 
 	<!-- Sapper generates a <style> tag containing critical CSS
