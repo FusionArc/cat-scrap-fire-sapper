@@ -1,6 +1,6 @@
 {
-  "name": "cat-scrap-fire-app",
-  "description": "SSR High performance PWA for Cat Scrap App",
+  "name": "cloud-fusion-local",
+  "description": "SSR High performance PWA for Cloud Cloud Fusion Local App",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -14,9 +14,9 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "10"
+    "node": "12"
   },
-  "main": "index.js",
+  "main": "./src/server.js",
   "dependencies": {
     "compression": "^1.7.1",
     "express": "^4.17.1",
