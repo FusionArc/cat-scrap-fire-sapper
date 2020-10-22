@@ -1,27 +1,16 @@
-# sapper-template
+# sapper-template with firebase refactoring
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
-
-
-## Getting started
-
-
-### Using `degit`
-
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
-
-```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
-```
+This template is a refactored version of the default
+[Sapper](https://github.com/sveltejs/sapper) template
+from which I adapted to run on firebase platform with firebase functions & firebase-admin js SDK as the priveledged server environment
 
 
-### Using GitHub templates
+##
+This template should reproduce the same project template as the default [sapper](https://github.com/sveltejs/sapper) template, running on the firebase platform. Can then create your project in the same way..
+
+## Using GitHub templates
 
 Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
-
 
 ### Running the project
 
@@ -37,16 +26,13 @@ Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
-
 ## Structure
 
 Sapper expects to find two directories in the root of your project —  `src` and `static`.
 
-
 ### src
 
 The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
-
 
 #### src/routes
 
@@ -62,7 +48,6 @@ There are three simple rules for naming the files that define your routes:
 * The file `src/routes/index.svelte` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
 * Files and directories with a leading underscore do *not* create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would *not* create a `/_helpers/datetime` route
 
-
 ### static
 
 The [static](static) directory contains any static assets that should be available. These are served using [sirv](https://github.com/lukeed/sirv).
@@ -74,7 +59,6 @@ import { files } from '@sapper/service-worker';
 ```
 
 ...so that you can cache them (though you can choose not to, for example if you don't want to cache very large files).
-
 
 ## Bundler config
 
@@ -93,7 +77,6 @@ vercel
 ```
 
 If your app can't be exported to a static site, you can use the [now-sapper](https://github.com/thgh/now-sapper) builder. You can find instructions on how to do so in its [README](https://github.com/thgh/now-sapper#basic-usage).
-
 
 ## Using external components
 
