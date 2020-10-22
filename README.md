@@ -4,9 +4,10 @@ This template is a refactored version of the default
 [Sapper](https://github.com/sveltejs/sapper) template
 from which I adapted to run on firebase platform with firebase functions & firebase-admin js SDK as the priveledged server environment
 
+## firebase and sapper and svelte
 
-##
-This template should reproduce the same project template as the default [sapper](https://github.com/sveltejs/sapper) template, running on the firebase platform. Can then create your project in the same way..
+This template should reproduce the same project template as the default [sapper](https://github.com/sveltejs/sapper) template, running on the firebase platform.  
+Can then create your project in the same way..
 
 ## Using GitHub templates
 
@@ -17,7 +18,7 @@ Alternatively, you can use GitHub's template feature with the [sapper-template-r
 However you get the code, you can install dependencies and run the project in development mode with:
 
 ```bash
-cd my-app
+cd my-app/functions
 npm install # or yarn
 npm run dev
 ```
@@ -64,7 +65,6 @@ import { files } from '@sapper/service-worker';
 
 Sapper uses Rollup or webpack to provide code-splitting and dynamic imports, as well as compiling your Svelte components. With webpack, it also provides hot module reloading. As long as you don't do anything daft, you can edit the configuration files to add whatever plugins you'd like.
 
-
 ## Production mode and deployment
 
 To start a production version of your app, run `npm run build && npm start`. This will disable live reloading, and activate the appropriate bundler plugins.
@@ -87,7 +87,6 @@ Because of that, it's essential that the bundler doesn't treat the package as an
 ```bash
 npm install -D @sveltejs/svelte-virtual-list
 ```
-
 
 ## Bugs and feedback
 
