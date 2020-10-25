@@ -1,1 +1,12 @@
-<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> %sapper.base% <link href=global.css rel=stylesheet> <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=favicon.png rel=icon type=image/png> %sapper.scripts% %sapper.styles% %sapper.head% </head> <body> <div id=sapper>%sapper.html%</div> 
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> %sapper.base% <link href=global.css rel=stylesheet> <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=favicon.png rel=icon type=image/png> <script src=https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js></script> <script> // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyA9gI6ikXCXrpuLzlyxPZO8Ir3B9cDM03Q",
+		authDomain: "cloud-fusion-local.firebaseapp.com",
+		databaseURL: "https://cloud-fusion-local.firebaseio.com",
+		projectId: "cloud-fusion-local",
+		storageBucket: "cloud-fusion-local.appspot.com",
+		messagingSenderId: "631037630361",
+		appId: "1:631037630361:web:84c3f482a58d4f0d68a508"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig); </script> %sapper.scripts% %sapper.styles% %sapper.head% </head> <body> <div id=sapper>%sapper.html%</div> 
