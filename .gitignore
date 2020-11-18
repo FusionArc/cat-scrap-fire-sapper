@@ -2,7 +2,9 @@
 /node_modules/
 /src/node_modules/@sapper/
 yarn-error.log
-/__sapper__/
+/__sapper__/**/*
+*/__sapper__/build/client/*
+*/__sapper__/build/server/*
 firebase.**.*
 *.firebase**
 /functions/index.js
